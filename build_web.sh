@@ -1,9 +1,20 @@
 #!/bin/bash
-cd ../windup-web
-mvn -DskipTests clean install
-cd ../windup-openshift
-mvn -DskipTests clean install
-cd ../windup-web-distribution
-mvn -DskipTests clean install
+
+#Before running this script ensure the docker daemon is running
+
+readonly MVN_COMMAND="mvn clean install -DskipTests"
+
+cd windup-web
+$MVN_COMMAND || exit 1
+cd ..
+
+cd windup-openshift
+$MVN_COMMAND || exit 1
+cd ..
+
+cd windup-web-distribution
+$MVN_COMMAND || exit 1
+
 cd target
+
 unzip rhamt-web-*.zip

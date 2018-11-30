@@ -1,9 +1,17 @@
 #!/bin/bash
-cd ../windup
-mvn -DskipTests clean install
-cd ../windup-rulesets
-mvn -DskipTests clean install
-cd ../windup-distribution
-mvn -DskipTests clean install
+
+readonly MVN_COMMAND="mvn clean install -DskipTests"
+
+cd windup
+$MVN_COMMAND || exit 1
+cd ..
+
+cd windup-rulesets
+$MVN_COMMAND || exit 1
+cd ..
+
+cd windup-distribution
+$MVN_COMMAND || exit 1
+
 cd target
 unzip rhamt-cli-*.zip
