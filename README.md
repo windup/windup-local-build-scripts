@@ -5,7 +5,7 @@ The scripts within this repository should be executed from the parent directory 
 
 Execute the scripts via the following commands (please ensure the Docker daemon is running before executing the build_web.sh)
 
-./windup-local-build-scripts/build_cli.sh
+ `$ ./windup-local-build-scripts/build_cli.sh`
 
 ./windup-local-build-scripts/build_web.sh
 
