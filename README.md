@@ -7,5 +7,5 @@ Execute the scripts via the following commands (please ensure the Docker daemon 
 
  `$ ./windup-local-build-scripts/build_cli.sh`
 
-./windup-local-build-scripts/build_web.sh
+ `$ ./windup-local-build-scripts/build_web.sh`
 
