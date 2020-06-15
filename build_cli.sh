@@ -16,4 +16,4 @@ cd windup-distribution
 $MVN_COMMAND || exit 1
 
 cd target
-unzip rhamt-cli-*.zip
+unzip mta-cli-*.zip
