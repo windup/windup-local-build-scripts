@@ -19,4 +19,4 @@ $MVN_COMMAND || exit 1
 
 cd target
 
-unzip rhamt-web-*.zip
+unzip mta-web-*.zip
