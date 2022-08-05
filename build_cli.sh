@@ -17,3 +17,4 @@ $MVN_COMMAND || exit 1
 
 cd windup-cli/target
 unzip windup-cli-*.zip
+unzip windup-cli-*-offline.zip
