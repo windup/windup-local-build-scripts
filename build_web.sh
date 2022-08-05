@@ -19,4 +19,4 @@ $MVN_COMMAND || exit 1
 
 cd target
 
-unzip mta-web-*.zip
+unzip windup-web-*.zip
