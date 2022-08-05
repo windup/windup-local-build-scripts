@@ -15,5 +15,6 @@ cd ..
 cd windup-distribution
 $MVN_COMMAND || exit 1
 
-cd target
-unzip mta-cli-*.zip
+cd windup-cli/target
+unzip windup-cli-*.zip
+unzip windup-cli-*-offline.zip
